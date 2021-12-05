@@ -12,13 +12,13 @@ int main(int argc, char** argv)
 #ifdef TEST_HTTP_CLIENT
     CHTTPMessage request, response;
 
-    // CHTTPClient client("172.16.1.36", 20203);
-    // request.setFirstLine("POST /user/user/customer/user/4/provision/1 HTTP/1.1");
-    // request.setHeader("Host", "172.16.1.36:20203");
+    CHTTPClient client("172.16.1.36", 20203);
+    request.setFirstLine("POST /user/user/customer/user/4/provision/1 HTTP/1.1");
+    request.setHeader("Host", "172.16.1.36:20203");
 
-    CHTTPClient client("www.baidu.com", 443, true);
-    request.setFirstLine("GET / HTTP/1.1");
-    request.setHeader("Host", "www.baidu.com:443");
+    // CHTTPClient client("www.baidu.com", 443, true);
+    // request.setFirstLine("GET / HTTP/1.1");
+    // request.setHeader("Host", "www.baidu.com:443");
 
     // CHTTPClient client("rts-atlas-dev.wingto.com", 443, true);
     // request.setFirstLine("GET /hls/755d38e6d163e820edda070141c443aa49480051/2021/11/19/091340.m3u8?bucket=wingto-test1&time=1637284420-1637284471&expires=1637292217&sign=0432cac58be50f905ddbbaf1e1fc6042 HTTP/1.1");
